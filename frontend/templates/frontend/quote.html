@@ -1,0 +1,43 @@
+{% extends "frontend/base.html" %}
+
+{% block content %}
+<!--the quote box-->
+
+    {% if quote %}
+
+ <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title">{{ quote.character }}</h3>
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="/static/frontend/images/{{ quote.character | lower }}.jpg" />
+                        </figure>
+                        <div class="content">
+                            <br>
+                            <h4>
+                                {{ quote.quote_text }}
+                            </h4>
+                            <br>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% else %}
+    <h4>
+        No Quote Found.
+    </h4>
+
+{% endif %}
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,37 @@
+{% extends "frontend/base.html" %}
+
+{% block content %}
+
+<!--the quote box-->
+
+{% if quotes %}
+    {% for q in quotes %}
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="/static/frontend/images/{{ q.character | lower }}.jpg" />
+                        </figure>
+                        <div class="content">
+                            <h3 class="title has-text-black">{{ q.character }}</h3>
+                            <a href="/quote/{{ q.id }}">
+                                <h4 class="title has-text-black">{{ q.quote_text }}</h4>
+                            </a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    {% endfor %}
+{% else %}
+    <h4>
+        No Quotes Found.
+    </h4>
+{% endif %}
+
+{% endblock %}
+
+
+
+

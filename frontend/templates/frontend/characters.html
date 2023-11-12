@@ -1,0 +1,32 @@
+{% extends "frontend/base.html" %}
+
+{% block content %}
+
+{% if characters %}
+    {% for c in characters %}
+
+ <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="/static/frontend/images/{{ c | lower }}.jpg" />
+                        </figure>
+                        <div class="content">
+                            <h3 class="title has-text-black">{{ c }}</h3>
+                            <a href="/character/{{ c.id }}">
+                            Quotes
+                            </a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    {% endfor %}
+{% else %}
+    <h4>
+        No Characters Found.
+    </h4>
+{% endif %}
+{% endblock %}
+

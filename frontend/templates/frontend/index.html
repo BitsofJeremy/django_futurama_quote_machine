@@ -1,0 +1,47 @@
+{% extends "frontend/base.html" %}
+
+{% block content %}
+<!--the quote box-->
+
+    {% if quote %}
+        {% for q in quote %}
+ <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title">{{ q.character }}</h3>
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="/static/frontend/images/{{ q.character | lower }}.jpg" />
+                        </figure>
+                        <div class="content">
+                            <br>
+                            <h4>
+                                {{ q.quote_text }}
+                            </h4>
+                            <br>
+                        </div>
+                        <a href="/">
+                            <button class="button is-block is-small is-fullwidth">Another Quote?</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+        {% endfor %}
+{% else %}
+    <h4>
+        No Quote Found.
+    </h4>
+    <a href="/">
+        <input type="submit" name="" value="Try Again?">
+    </a>
+{% endif %}
+{% endblock %}
+
+
+
+
+
