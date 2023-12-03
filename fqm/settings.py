@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8x$p_-yw%&ij4frrg9(*81h=2%**gsrd7y6%+f#yw0a=6o5&yu
 if os.getenv('ENV') == 'prod':
     # Production
     DEBUG = False
-    ALLOWED_HOSTS = ['fqm.funinternetthings.com']
+    ALLOWED_HOSTS = ['futurama.funinternetthings.com']
 else:
     # Testing or something
     DEBUG = True
