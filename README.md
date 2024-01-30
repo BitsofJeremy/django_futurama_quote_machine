@@ -2,7 +2,7 @@
 
 A Django App that returns Futurama quotes
 
-Online here:  https://fqm.funinternetthings.com
+Online here:  https://futurama.funinternetthings.com
 
 ![](Screenshot3.png)
 
@@ -10,7 +10,7 @@ Online here:  https://fqm.funinternetthings.com
 
 Clone the repo
 
-    git clone https://github.com/ephergent/django_futurama_quote_machine.git
+    git clone https://github.com/BitsofJeremy/django_futurama_quote_machine.git
 
 Setup you virtualenv and activate it
 
