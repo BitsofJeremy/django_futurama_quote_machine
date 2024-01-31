@@ -1,0 +1,6 @@
+export DJANGO_SETTINGS_MODULE=fqm.settings
+# test or prod
+export ENV=test
+export SECRET_KEY=super_secret
+export USERNAME="nixon"
+export PASSWORD="ARROOOOOO!"

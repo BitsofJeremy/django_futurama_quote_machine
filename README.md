@@ -21,6 +21,11 @@ Install requirements
 
     pip install -r requirements.txt
 
+Copy and Source an environment variable file [edit to your liking]
+
+    cp env-example .env
+    source .env
+
 Create you SQLite DB
 
     python manage.py migrate
@@ -31,7 +36,11 @@ Create an admin
 
 Run the server
 
-  python manage.py runserver
+    python manage.py runserver
+
+Add the base quotes in a different terminal
+
+    python add_quotes.py
 
 Open http://127.0.0.1:8000
 
@@ -41,11 +50,6 @@ Enjoy a nice quote!
 
 ![Screenshot1](Screenshot1.png)
 
-### Setup DB and inset quotes
-
-- TODO Write this 'how to'
-
-    
 
 ### API
 
