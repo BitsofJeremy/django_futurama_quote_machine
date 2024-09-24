@@ -2,7 +2,7 @@
 
 A Django App that returns Futurama quotes
 
-Online here:  https://futurama.funinternetthings.com
+***** ARCHIVED REPO *****
 
 ![](Screenshot3.png)
 
